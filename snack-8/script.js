@@ -21,3 +21,10 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+let thisClass
+const classe = students.find((elements) => {
+  if (elements.name === "Marco Lanci") {
+    thisClass = elements.class
+  }
+})
+console.log(thisClass);
